@@ -1,0 +1,126 @@
+.about-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container{
+  height: 100%;
+  width: 80%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: 50%;
+  grid-auto-columns: 33%;
+}
+
+.about-profile-picture{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: lightgray;
+}
+
+.about-profile-text{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 1rem;
+  color: black;
+}
+
+.video-section-text{
+  color: black;
+}
+
+.video-section-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.video-player{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px){
+  .about-container{
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 50%;
+    grid-auto-columns: 33%;
+    align-content: center;
+  }
+  
+  .about-profile-picture{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: lightgray;
+  }
+  
+  .about-profile-text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1rem;
+    color: black;
+  }
+} 
+
+@media only screen and (max-width: 600px){
+  .about-container{
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 50%;
+    grid-auto-columns: 33%;
+    align-content: center;
+  }
+  
+  .about-profile-picture{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: lightgray;
+    width: 100%;
+  }
+  
+  .about-profile-text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1rem;
+    color: black;
+    width: 100%;
+  }
+}

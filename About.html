@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Responsive & Semantic HTML</title>
+  <link rel="stylesheet" href="General.css">
+  <link rel="stylesheet" href="About.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <header class="header">
+      <button class="drop-btn">
+        <img class="button-img" id="header-arrow" src="Img/arrow-down.svg"></img>
+      </button>
+    </header>
+    <nav class="offscreen-dropdown-menu">
+      <ul class="offscreen-dropdown-list">
+        <li class="dropdown-item"><a class="dropdown-link" href="Index.html">Home</a></li>
+        <li class="dropdown-item"><a class="dropdown-link" href="mailto:fakemail@fakemailservice.io">Contact</a></li>
+        <li class="dropdown-item"><a class="dropdown-link" href="#">Products</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="about-wrapper">
+    <figure class="about-container">
+        <img class="about-profile-picture" src="Img/users-avatar.svg" alt="Profile-picture"></img>
+        <p class="about-profile-text">
+          About Me
+
+Hi, I’m Gerald, a full-time coffee enthusiast and part-time code whisperer. 
+By day, I tame wild algorithms with nothing but a rubber duck and sheer determination. 
+By night, I craft elegant spaghetti code that runs faster if you squint at it. 
+Fluent in five programming languages that I made up, 
+I specialize in debugging by staring at the screen until the error messages give up in fear.
+When I’m not busy teaching computers to dream in binary, 
+you can find me philosophizing about whether or not the internet is just a series of tubes filled with memes. 
+I once accidentally invented a new programming paradigm—half-bug-driven development—and it works as well as you'd expect.
+Currently looking for opportunities to automate everything in your life, 
+including making toast, so hit me up if you’re ready to embrace the future… and also because I’ve already automated my about me section.
+        </p>
+    </figure>
+  </main>
+
+  <section class="video-section-wrapper">
+    <p class="video-section-text">The inspiration for this site</p>
+    <video class="video-player" controls autoplay src="Img/videoplayback.mp4" type="video/mp4"></video>
+  </section>
+
+  <div class="footer-wrapper">
+    <footer class="footer">
+      This site was made for a school project
+    </footer>
+  </div>
+  <script src="Script.js"></script>
+</body>
+
+</html>
